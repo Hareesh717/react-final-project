@@ -1,0 +1,180 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f8f6;
+  color: #18352b;
+}
+
+.navbar {
+  background: #0b6b55;
+  color: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #c8f5dc;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #dff4e8, #f7faf8);
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 54px);
+}
+
+.hero p {
+  color: #63776d;
+}
+
+.page {
+  max-width: 1100px;
+  min-height: 65vh;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 5px 20px #163e2b12;
+  border: 1px solid #e0ebe4;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+.card a {
+  color: #0b6b55;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.category {
+  color: #0b6b55;
+  background: #e1f3e8;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.btn {
+  display: inline-block;
+  background: #0b6b55;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 18px;
+  margin: 6px 6px 6px 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.secondary {
+  background: white;
+  color: #0b6b55;
+  border: 1px solid #0b6b55;
+}
+
+.danger {
+  background: #bd4545;
+}
+
+.search,
+.booking-form input {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  padding: 13px;
+  margin: 12px 0;
+  border: 1px solid #d4e1d9;
+  border-radius: 8px;
+}
+
+.booking-form {
+  max-width: 500px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+}
+
+.footer {
+  background: #18352b;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  margin-top: 30px;
+}
+
+@media (max-width: 750px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero {
+    padding: 65px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page {
+    padding: 32px 16px;
+  }
+
+  .nav-links {
+    gap: 10px;
+    font-size: 13px;
+  }
+}
